@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-6 m-auto">
+        <div class="container mt-5 pl-5 " >
+            <h  class="text-center " style="font-size:30px; margin-left:200px; font-weight:bold">Login</h>
+            <form action="/login" method="post">
+             {{#if loginErr}}  
+                   <p class="error">{{loginErr}}</p>
+             {{/if}}
+
+
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" class="form-control" name="Name" placeholder="Enter Name">
+                </div>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" class="form-control" name="Email" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                    <label>Password</label>
+                    <input type="Password"  class="form-control" name="Password" placeholder="Enter Password">
+                </div>
+                <a href="/signup">Create New account ?</a>
+                <button type="submit" class="btn btn-primary  float-right" >Login</button>
+            </form>
+
+        </div>
+
+    </div>
+</div>
